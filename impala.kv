@@ -1,0 +1,16 @@
+#:kivy 1.11.0
+
+<Control>
+  orientation: 'horizontal'
+  BoxLayout:
+    size_hint: (0.2, None)
+    Label: 
+      text: 'Lock Toggle'
+    Button:
+      on_press: root.logId('Lock')
+
+  BoxLayout:
+    size_hint: (0.4, None)
+    Label:
+      text: 'Lights Toggle'
+
