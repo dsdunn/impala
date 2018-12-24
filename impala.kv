@@ -3,6 +3,7 @@
 <Button>:
   font_size: 40
   padding: [3,3]
+  always_release: True
 
 <GridLayout>:
   spacing: [3,3]
@@ -32,11 +33,11 @@
 
       Button:
         text: 'Lock'
-        on_press: root.printName('Lock')
+        on_press: root.log_control('Lock')
 
       Button: 
         text: 'Lights'
-        on_press: root.printName('Lights')
+        on_press: root.log_control('Lights')
 
 
   BoxLayout:
@@ -53,42 +54,50 @@
       padding: [5]
 
       Button:
-        on_press: root.printName('FD UP')
+        on_press: root.start_window('FD UP')
+        on_release: root.stop_window()
         ButtonImage:
           source: 'up_arrow.png'
           
       Button:
-        on_press: root.printName('FP UP')
+        on_press: root.start_window('FP UP')
+        on_release: root.stop_window()
         ButtonImage:
           source: 'up_arrow.png'
 
       Button:
-        on_press: root.printName('FD DWN')
+        on_press: root.start_window('FD DWN')
+        on_release: root.stop_window()
         ButtonImage:
           source: 'down_arrow.png'
 
       Button:
-        on_press: root.printName('FP DWN')
+        on_press: root.start_window('FP DWN')
+        on_release: root.stop_window()
         ButtonImage:
           source: 'down_arrow.png'
 
       Button:
-        on_press: root.printName('RD UP')
+        on_press: root.start_window('RD UP')
+        on_release: root.stop_window()
         ButtonImage:
           source: 'up_arrow.png'
 
       Button:
-        on_press: root.printName('RP UP')
+        on_press: root.start_window('RP UP')
+        on_release: root.stop_window()
         ButtonImage:
           source: 'up_arrow.png'
 
       Button:
-        on_press: root.printName('RD DWN')
+        on_press: root.start_window('RD DWN')
+        on_release: root.stop_window()
         ButtonImage:
           source: 'down_arrow.png'
 
       Button:
-        on_press: root.printName('RP DWN')
+        on_press: root.start_window('RP DWN')
+        on_release: root.stop_window()
         ButtonImage:
           source: 'down_arrow.png'
 
@@ -108,27 +117,27 @@
 
       Button:
         text: '1'
-        on_press: root.printName('1')
+        on_press: root.log_control('1')
 
       Button:
         text: '2'
-        on_press: root.printName('2')
+        on_press: root.log_control('2')
 
       Button:
         text: '3'
-        on_press: root.printName('3')
+        on_press: root.log_control('3')
 
       Button:
         text: '4'
-        on_press: root.printName('4')
+        on_press: root.log_control('4')
 
       Button:
         text: '5'
-        on_press: root.printName('5')
+        on_press: root.log_control('5')
 
       Button:
         text: '6'
-        on_press: root.printName('6')
+        on_press: root.log_control('6')
 
 
 
