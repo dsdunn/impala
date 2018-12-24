@@ -10,7 +10,7 @@ from kivy.uix.button import Button
 
 
 class Control(BoxLayout):
-  def logId(self, str):
+  def printName(self, str):
     print str
 
 class ImpalaApp(App): 
