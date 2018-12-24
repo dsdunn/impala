@@ -6,8 +6,11 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
+from kivy.uix.image import Image 
 
-
+class ButtonImage(Image):
+  def build(self, source):
+    self.source = source
 
 class Control(BoxLayout):
   def printName(self, str):
